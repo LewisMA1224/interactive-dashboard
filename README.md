@@ -9,5 +9,5 @@ This project is a web-based dashboard built for WEB-115 to demonstrate interacti
 - [ ] Make it super cool
 - [X] Add a weekly task goal calculator
 
-## TODO: Weekly Task Goals
+## Weekly Task Goals
 This feature calculates a user's tasks targets based on daily goals and weekly bonuses
