@@ -1,0 +1,13 @@
+#weekly-tasks {
+    margin-top: 20px;
+}
+
+#weekly-tasks input {
+    margin: 5px;
+    padding: 8px;
+}
+
+#goal-btn {
+    margin: 5px;
+    padding: 8px 12px;
+}
