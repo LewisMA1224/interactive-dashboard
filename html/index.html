@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js/script.js" defer></script>
+    
      <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
@@ -24,6 +24,16 @@
     <noscript> "Unfortunately, your web browser does not support JavaScript." </noscript>
      <div class="container">
     <div class="row">
+        <div class="col" id="weekly-tasks">
+            <script src="task-manager.js"></script>
+            <form id="task-form">
+                <input type="text" id="name-input" placeholder="Enter user's name">
+                <input type="number" id="taskgoal-input" placeholder="Enter daily task goal">
+                <input type="number" id="weeklybonustasks-input" placeholder="Enter weekly bonus tasks">
+                <button id="goal-btn" type="submit">Add Task</button>
+                </form>
+                <p id="goal-message"></p>
+        </div>
         <!-- Dashboard Content -->
     </div>
 </div>
