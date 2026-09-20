@@ -11,3 +11,25 @@
     margin: 5px;
     padding: 8px 12px;
 }
+
+#metric-converter {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#metric-converter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#metric-converter input,
+#metric-converter select,
+#metric-converter button {
+    padding: 8px;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}

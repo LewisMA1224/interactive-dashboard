@@ -23,8 +23,33 @@
     <noscript> "Unfortunately, your web browser does not support JavaScript." </noscript>
      <div class="container">
     <div class="row">
-        <div class="col" id="weekly-tasks">
 
+        <div class="col" id="metric-converter">
+            <form id="metric-converter-form">
+        <input type="number" id="number-input" placeholder="Enter numeric value">
+        <label for="metric-imperial">Choose a conversion:</label>
+        <select id="metric-imperial" name="units">
+        <option value="inch to centimeter">Inch to Centimeter</option>
+        <option value="foot to centimeter">Foot to Centimeter</option>
+        <option value="yard to meter">Yard to Meter</option>
+        <option value="mile to kilometer">Mile to Kilometer</option>
+        <option value="centimeter to inch">Centimeter to Inch</option>
+        <option value="centimeter to foot">Centimeter to Foot</option>
+        <option value="meter to yard">Meter to Yard</option>
+        <option value="kilometer to mile">Kilometer to Mile</option>
+</select>
+        <button id="convert-btn" type="submit">Convert</button>
+
+    </form>
+        <p id="result"></p>
+        <script src="js/metric-converter.js"></script>
+    </div>
+
+  
+
+
+
+        <div class="col" id="weekly-tasks">
     <form id="task-form">
         <input type="text" id="name-input" placeholder="Enter user's name">
         <input type="number" id="taskgoal-input" placeholder="Enter daily task goal">
