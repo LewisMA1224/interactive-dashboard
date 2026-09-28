@@ -18,35 +18,35 @@ convertButton.addEventListener("click", function(event) {
     let result;
     let message;
 
-    if (conversionChoice == "inch to centimeter") {
+    if (conversionChoice == "inch-to-centimeter") {
         result = input_value * 2.54;
         message = input_value + " inches is " + result.toFixed(2) + " centimeters";
 
-    } else if (conversionChoice == "foot to centimeter") {
+    } else if (conversionChoice == "foot-to-centimeter") {
         result = input_value * 30.48;
         message = input_value + " feet is " + result.toFixed(2) + " centimeters";
 
-    } else if (conversionChoice == "yard to meter") {
+    } else if (conversionChoice == "yard-to-meter") {
         result = input_value * 0.91;
         message = input_value + " yards is " + result.toFixed(2) + " meters";
 
-    } else if (conversionChoice == "mile to kilometer") {
+    } else if (conversionChoice == "mile-to-kilometer") {
         result = input_value * 1.61;
         message = input_value + " miles is " + result.toFixed(2) + " kilometers";
 
-    } else if (conversionChoice == "centimeter to inch") {
+    } else if (conversionChoice == "centimeter-to-inch") {
         result = input_value * 0.39;
         message = input_value + " centimeters is " + result.toFixed(2) + " inches";
 
-    } else if (conversionChoice == "centimeter to foot") {
+    } else if (conversionChoice == "centimeter-to-foot") {
         result = input_value * 0.0328;
         message = input_value + " centimeters is " + result.toFixed(2) + " feet";
 
-    } else if (conversionChoice == "meter to yard") {
+    } else if (conversionChoice == "meter-to-yard") {
         result = input_value * 1.09;
         message = input_value + " meters is " + result.toFixed(2) + " yards";
 
-    } else if (conversionChoice == "kilometer to mile") {
+    } else if (conversionChoice == "kilometer-to-mile") {
         result = input_value * 0.62;
         message = input_value + " kilometers is " + result.toFixed(2) + " miles";
     }
