@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
     
      <!-- Bootstrap  -->
@@ -24,21 +24,38 @@
      <div class="container">
     <div class="row">
 
+<div class="col" id="magic-eight-ball">
+     <script src="js/magic-eight-ball.js" defer></script>﻿
+     <link rel="stylesheet" href="css/magic-eight-ball.css">
+     <h2 class="heading">Magic Eight Ball</h2>
+      <form>
+       <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
+       <input id="question" name="question" size="80">
+       <div id="magicEightBall">
+        <div id="circle"></div>
+        <img id="ball" src="img/magic-eight-ball.png"/>
+       </div>
+       <button id="reset" name="reset" type="reset">Ask another question</button>
+      </form>
+      <br>
+   </div>
+
+
         <div class="col" id="metric-converter">
             <h2 class="heading">Metric Converter</h2>
             <form id="metric-converter-form">
         <input type="number" id="number-input" placeholder="Enter numeric value">
         <label for="metric-imperial">Choose a conversion:</label>
         <select id="metric-imperial" name="units">
-        <option value="inch to centimeter">Inch to Centimeter</option>
-        <option value="foot to centimeter">Foot to Centimeter</option>
-        <option value="yard to meter">Yard to Meter</option>
-        <option value="mile to kilometer">Mile to Kilometer</option>
-        <option value="centimeter to inch">Centimeter to Inch</option>
-        <option value="centimeter to foot">Centimeter to Foot</option>
-        <option value="meter to yard">Meter to Yard</option>
-        <option value="kilometer to mile">Kilometer to Mile</option>
-</select>
+        <option value="inch-to-centimeter">Inch to Centimeter</option>
+        <option value="foot-to-centimeter">Foot to Centimeter</option>
+        <option value="yard-to-meter">Yard to Meter</option>
+        <option value="mile-to-kilometer">Mile to Kilometer</option>
+        <option value="centimeter-to-inch">Centimeter to Inch</option>
+        <option value="centimeter-to-foot">Centimeter to Foot</option>
+        <option value="meter-to-yard">Meter to Yard</option>
+        <option value="kilometer-to-mile">Kilometer to Mile</option>
+        </select>
         <button id="convert-btn" type="submit">Convert</button>
 
     </form>

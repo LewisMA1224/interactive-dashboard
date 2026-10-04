@@ -59,3 +59,6 @@ BEGIN
     
 END IF
 END
+
+## Magic Eight Ball
+The Magic Eight Ball allows users to enter a yes/no question and click the Eight Ball to receive a random response. The application uses a JavaScript array, Math.random(), conditional statements, DOM manipulation, and event listeners to generate and display responses. The reset button clears the question and hides the previous answer.
