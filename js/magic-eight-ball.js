@@ -17,7 +17,9 @@ function displayAnswer() {
     const circle = document.getElementById("circle");
 
     circle.innerHTML = answers[randomIndex];
-    circle.style.display = "block";
+    circle.style.display = 'inline-block';
+
+    circle.innerHTML = '<br><br><br>' + answers[randomIndex];
 }
 
 
