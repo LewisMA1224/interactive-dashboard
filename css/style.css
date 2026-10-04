@@ -1,37 +1,7 @@
-#weekly-tasks {
-    margin-top: 20px;
-}
+/* General page layout */
 
-#weekly-tasks input {
-    margin: 5px;
-    padding: 8px;
-}
-
-#goal-btn {
-    margin: 5px;
-    padding: 8px 12px;
-}
-
-#metric-converter {
-    padding: 20px;
-    margin-top: 20px;
-}
-
-#metric-converter form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#metric-converter input,
-#metric-converter select,
-#metric-converter button {
-    padding: 8px;
-}
-
-#result {
-    margin-top: 15px;
-    font-weight: bold;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -40,28 +10,32 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 2rem auto;
 }
 
 .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
     align-items: start;
 }
 
 .col {
-    padding: 1.5rem;
+    min-height: 350px;
+    padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
-    min-height: 350px;
 }
 
 .heading {
-    margin-bottom: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
     text-align: center;
 }
+
+
+/* General form styling */
 
 form {
     display: flex;
@@ -81,6 +55,9 @@ button {
     cursor: pointer;
 }
 
+
+/* Magic Eight Ball */
+
 #question {
     max-width: 100%;
 }
@@ -88,6 +65,80 @@ button {
 #magicEightBall {
     margin: 1.5rem auto;
 }
+
+
+/* Metric Converter */
+
+#metric-converter {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#metric-converter input,
+#metric-converter select,
+#metric-converter button {
+    padding: 8px;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* Weekly Tasks */
+
+#weekly-tasks {
+    margin-top: 0;
+}
+
+#weekly-tasks input {
+    width: 100%;
+    margin: 0;
+    padding: 0.65rem;
+}
+
+#goal-btn,
+#add-task {
+    width: 100%;
+    margin: 0;
+    padding: 0.65rem;
+}
+
+#goal-message {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Dynamic Task List */
+
+#task-list {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+#task-list h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+#task-list p {
+    margin: 0 0 1rem;
+}
+
+#user-tasks {
+    margin: 1rem 0 0;
+    padding-left: 1.25rem;
+}
+
+#user-tasks li {
+    margin-bottom: 0.4rem;
+}
+
+
+/* Responsive Layout */
 
 @media (max-width: 900px) {
     .row {

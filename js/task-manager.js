@@ -1,3 +1,5 @@
+let myTasks = []
+
 // Calculate the user's weekly task goal
 function weeklyGoal(userName, dailyGoal, bonusTasks) {
 
@@ -30,4 +32,29 @@ document.getElementById("goal-btn").addEventListener("click", function(event) {
     // Call the weeklyGoal function
     weeklyGoal(userName, dailyGoal, bonusTasks);
 });
+
+
+// Update task-manager.js logic
+let userTasks = document.createElement("ul");
+userTasks.id = "user-tasks";
+
+let taskList = document.getElementById("task-list");
+taskList.appendChild(userTasks);
+
+let addTaskButton = document.getElementById("add-task");
+
+addTaskButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    let taskName = document.getElementById("task-name").value;
+
+    myTasks.push(taskName);
+
+    let taskItem = document.createElement("li");
+    let taskText = document.createTextNode(taskName);
+    taskItem.appendChild(taskText); 
+
+    userTasks.appendChild(taskItem);
+});
+
 
