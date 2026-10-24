@@ -92,14 +92,16 @@ button {
     margin-top: 0;
 }
 
-#weekly-tasks input {
+#weekly-tasks input,
+#weekly-tasks select {
     width: 100%;
     margin: 0;
     padding: 0.65rem;
 }
 
 #goal-btn,
-#add-task {
+#add-task,
+#delete-list {
     width: 100%;
     margin: 0;
     padding: 0.65rem;
@@ -111,7 +113,7 @@ button {
 }
 
 
-/* Dynamic Task List */
+/* Task Manager */
 
 #task-list {
     margin-top: 1.5rem;
@@ -121,28 +123,81 @@ button {
 
 #task-list h3 {
     margin: 0 0 0.5rem;
+    text-align: center;
     font-size: 1.25rem;
 }
 
 #task-list p {
     margin: 0 0 1rem;
+    text-align: center;
+}
+
+#task-manager-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#task-manager-form label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#task-important {
+    width: auto;
+    min-height: auto;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+}
+
+
+
+#add-task {
+    margin-top: 0.5rem;
+}
+
+#delete-list {
+    margin-top: 0.25rem;
 }
 
 #user-tasks {
-    margin: 1rem 0 0;
-    padding-left: 1.25rem;
+    margin: 1.25rem 0 0;
+    padding-left: 0;
+    list-style: none;
 }
 
 #user-tasks li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 0.85rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#user-tasks button {
+    width: auto;
+    min-height: auto;
+    margin-top: 0.5rem;
+    margin-right: 0.4rem;
+    padding: 0.4rem 0.65rem;
 }
 
 
 /* Responsive Layout */
 
 @media (max-width: 900px) {
+
     .row {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #user-tasks button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.35rem;
     }
 }
