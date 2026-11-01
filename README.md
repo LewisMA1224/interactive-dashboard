@@ -62,3 +62,15 @@ END
 
 ## Magic Eight Ball
 The Magic Eight Ball allows users to enter a yes/no question and click the Eight Ball to receive a random response. The application uses a JavaScript array, Math.random(), conditional statements, DOM manipulation, and event listeners to generate and display responses. The reset button clears the question and hides the previous answer.
+
+## Module 10 - Real-Time Digital Clock and Calendar
+
+Added a real-time digital clock and current date component to the interactive dashboard.
+
+### Features
+- Uses the JavaScript Date object
+- Displays the user's local time and current date
+- Formats hours, minutes, and seconds with leading zeros
+- Displays AM/PM
+- Updates automatically every second using setInterval()
+- Uses a separate CSS stylesheet for clock styling
